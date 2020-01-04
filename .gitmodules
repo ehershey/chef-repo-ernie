@@ -1,0 +1,3 @@
+[submodule "cookbooks/ernie"]
+	path = cookbooks/ernie
+	url = git@github.com:ehershey/cb-ernie.git
