@@ -1,3 +1,9 @@
 [submodule "cookbooks/ernie"]
 	path = cookbooks/ernie
 	url = git@github.com:ehershey/cb-ernie.git
+[submodule "cookbooks/chef-server"]
+	path = cookbooks/chef-server
+	url = git@github.com:ehershey/chef-server
+[submodule "cookbooks/managed-chef-server"]
+	path = cookbooks/managed-chef-server
+	url = git@github.com:ehershey/managed-chef-server-cookbook
