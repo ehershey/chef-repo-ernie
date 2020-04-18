@@ -1,5 +1,5 @@
 {
-  "name": "workstation",
+  "name": "chef-client",
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
@@ -10,8 +10,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[ernie::workstation]",
-    "role[chef-client]"
+    "recipe[chef-client::default]"
   ],
   "env_run_lists": {
 
