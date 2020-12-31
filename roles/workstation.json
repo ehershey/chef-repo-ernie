@@ -3,17 +3,71 @@
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
-
+    "ernie": {
+      "user": "ernie"
+    },
+    "postfix": {
+      "aliases": {
+        "root": "ernie",
+        "MAILER-DAEMON": "postmaster",
+        "postmaster": "root",
+        "bin": "root",
+        "daemon": "root",
+        "named": "root",
+        "nobody": "root",
+        "uucp": "root",
+        "www": "root",
+        "ftp-bugs": "root",
+        "postfix": "root",
+        "manager": "root",
+        "dumper": "root",
+        "operator": "root",
+        "abuse": "postmaster",
+        "decode": "root"
+      },
+      "main": {
+        "compatibility_level": "2",
+        "command_directory": "/usr/sbin",
+        "data_directory": "/var/lib/postfix",
+        "unknown_local_recipient_reject_code": "550",
+        "debug_peer_level": "2",
+        "debugger_command": "PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin ddd $daemon_directory/$process_name $process_id & sleep 5",
+        "sendmail_path": "/usr/sbin/sendmail",
+        "newaliases_path": "/usr/bin/newaliases",
+        "mailq_path": "/usr/bin/mailq",
+        "html_directory": "/usr/share/doc/postfix/html",
+        "manpage_directory": "/usr/share/man",
+        "sample_directory": "/usr/share/doc/postfix/examples",
+        "readme_directory": "/usr/share/doc/postfix",
+        "inet_protocols": "all",
+        "message_size_limit": "10485760",
+        "biff": "no",
+        "mynetworks": "127.0.0.0/8, [::1]/128",
+        "smtpd_client_restrictions": "permit_mynetworks permit_sasl_authenticated permit",
+        "recipient_delimiter": "+",
+        "tls_random_source": "dev:/dev/urandom",
+        "smtpd_tls_ciphers": "medium",
+        "inet_interfaces": "loopback-only",
+        "smtp_tls_CAfile": "",
+        "smtpd_tls_CAfile": "",
+        "smtpd_tls_cert_file": "",
+        "smtpd_tls_key_file": "",
+        "smtp_sasl_auth_enable": "yes",
+        "smtp_sasl_password_maps": "hash:/etc/postfix/sasl_passwd",
+        "smtp_sasl_security_options": "noanonymous",
+        "smtp_use_tls": "yes",
+        "smtp_sasl_mechanism_filter": "plain"
+      }
+    }
   },
-  "override_attributes": {
-
-  },
+  "override_attributes": {},
   "chef_type": "role",
   "run_list": [
     "recipe[ernie::workstation]",
-    "role[chef-client]"
+    "role[chef-client]",
+    "recipe[ernie::postfix]",
+    "recipe[postfix::aliases]",
+    "recipe[postfix::sasl_auth]"
   ],
-  "env_run_lists": {
-
-  }
+  "env_run_lists": {}
 }
