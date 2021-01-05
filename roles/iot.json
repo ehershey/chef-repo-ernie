@@ -3,17 +3,15 @@
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
-
+    "ernie": {
+      "user": "pi"
+    }
   },
-  "override_attributes": {
-
-  },
+  "override_attributes": {},
   "chef_type": "role",
   "run_list": [
     "recipe[ernie::iot]",
     "role[chef-client]"
   ],
-  "env_run_lists": {
-
-  }
+  "env_run_lists": {}
 }
