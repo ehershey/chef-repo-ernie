@@ -67,7 +67,9 @@
     "role[chef-client]",
     "recipe[ernie::postfix]",
     "recipe[postfix::aliases]",
-    "recipe[postfix::sasl_auth]"
+    "recipe[postfix::sasl_auth]",
+    "recipe[ernie::erniepayloads]"
+
   ],
   "env_run_lists": {}
 }
