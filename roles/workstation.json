@@ -25,7 +25,6 @@
         "abuse": "postmaster",
         "decode": "root"
       },
-      "packages": [],
       "main": {
         "compatibility_level": "2",
         "command_directory": "/usr/sbin",
@@ -61,7 +60,11 @@
       }
     }
   },
-  "override_attributes": {},
+  "override_attributes": {
+    "postfix": {
+      "packages": []
+    }
+  },
   "chef_type": "role",
   "run_list": [
     "recipe[ernie::workstation]",
