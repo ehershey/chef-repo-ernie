@@ -25,6 +25,7 @@
         "abuse": "postmaster",
         "decode": "root"
       },
+      "packages": [],
       "main": {
         "compatibility_level": "2",
         "command_directory": "/usr/sbin",
@@ -69,7 +70,6 @@
     "recipe[postfix::aliases]",
     "recipe[postfix::sasl_auth]",
     "recipe[ernie::erniepayloads]"
-
   ],
   "env_run_lists": {}
 }
