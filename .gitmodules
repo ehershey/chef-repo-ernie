@@ -7,3 +7,6 @@
 [submodule "cookbooks/managed-chef-server"]
 	path = cookbooks/managed-chef-server
 	url = git@github.com:ehershey/managed-chef-server-cookbook
+[submodule "cookbooks/postfix"]
+	path = cookbooks/postfix
+	url = git@github.com:ehershey/postfix.git
