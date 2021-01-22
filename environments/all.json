@@ -2,7 +2,7 @@
   "name": "all",
   "description": "",
   "cookbook_versions": {
-    "ernie": "0.3.2",
+    "ernie": "0.3.3",
     "chef_client_updater": "3.11.1"
   },
   "json_class": "Chef::Environment",
