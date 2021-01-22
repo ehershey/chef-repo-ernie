@@ -4,13 +4,15 @@
   "json_class": "Chef::Role",
   "default_attributes": {
 
+
   },
   "override_attributes": {
 
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[chef-client::default]"
+    "recipe[chef-client::default]",
+    "recipe[chef_client_updater::default]"
   ],
   "env_run_lists": {
 
