@@ -13,3 +13,6 @@
 [submodule "cookbooks/chef_client_updater"]
 	path = cookbooks/chef_client_updater
 	url = git@github.com:chef-cookbooks/chef_client_updater.git
+[submodule "cookbooks/chef-client"]
+	path = cookbooks/chef-client
+	url = git@github.com:chef-cookbooks/chef-client.git

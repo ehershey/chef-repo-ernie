@@ -3,7 +3,8 @@
   "description": "",
   "cookbook_versions": {
     "ernie": "0.3.3",
-    "chef_client_updater": "3.11.1"
+    "chef_client_updater": "3.11.1",
+    "chef-client": "12.3.3"
   },
   "json_class": "Chef::Environment",
   "chef_type": "environment",
