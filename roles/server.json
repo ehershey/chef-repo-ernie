@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "ernie": {
+      "user": "ernie"
+    }
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[ernie::server]",
+    "role[chef-client]",
+    "recipe[ernie::erniepayloads]"
+
+  ],
+  "env_run_lists": {
+
+  }
+}

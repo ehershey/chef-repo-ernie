@@ -60,14 +60,19 @@
       }
     }
   },
-  "override_attributes": {},
+  "override_attributes": {
+    "postfix": {
+      "packages": []
+    }
+  },
   "chef_type": "role",
   "run_list": [
     "recipe[ernie::workstation]",
     "role[chef-client]",
     "recipe[ernie::postfix]",
     "recipe[postfix::aliases]",
-    "recipe[postfix::sasl_auth]"
+    "recipe[postfix::sasl_auth]",
+    "recipe[ernie::erniepayloads]"
   ],
   "env_run_lists": {}
 }
