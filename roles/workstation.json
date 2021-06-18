@@ -4,7 +4,17 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "ernie": {
-      "user": "ernie"
+      "user": "ernie",
+      "packages": {
+        "mac_os_x": [
+          "bitwarden-cli",
+          "hub",
+          "oath-toolkit",
+          "xmlstarlet",
+          "moreutils",
+          "mongodb-community@4.4"
+        ]
+      }
     },
     "postfix": {
       "aliases": {
@@ -68,6 +78,7 @@
   "chef_type": "role",
   "run_list": [
     "recipe[ernie::workstation]",
+    "recipe[ernie]",
     "role[chef-client]",
     "recipe[ernie::postfix]",
     "recipe[postfix::aliases]",

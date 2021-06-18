@@ -19,3 +19,6 @@
 [submodule "cookbooks/perl"]
 	path = cookbooks/perl
 	url = https://github.com/sous-chefs/perl
+[submodule "cookbooks/homebrew"]
+	path = cookbooks/homebrew
+	url = https://github.com/sous-chefs/homebrew.git
