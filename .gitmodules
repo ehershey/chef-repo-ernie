@@ -16,3 +16,6 @@
 [submodule "cookbooks/chef-client"]
 	path = cookbooks/chef-client
 	url = git@github.com:chef-cookbooks/chef-client.git
+[submodule "cookbooks/homebrew"]
+	path = cookbooks/homebrew
+	url = https://github.com/sous-chefs/homebrew.git
