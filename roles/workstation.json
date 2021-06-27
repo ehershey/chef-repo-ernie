@@ -12,6 +12,13 @@
           "oath-toolkit",
           "xmlstarlet",
           "moreutils",
+          "tig",
+          "direnv",
+          "glow",
+          "gnu-sed",
+          "oathtool",
+          "jq",
+          "gh",
           "mongodb-community@4.4"
         ]
       }
