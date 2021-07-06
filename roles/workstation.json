@@ -31,7 +31,7 @@
           "telnet",
           "vim",
           "watch",
-          "influxdb",
+          "influxdb@1",
           "util-linux",
           "zbar",
           "xmlstarlet",
