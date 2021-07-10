@@ -113,7 +113,8 @@
     "recipe[ernie::postfix]",
     "recipe[postfix::aliases]",
     "recipe[postfix::sasl_auth]",
-    "recipe[ernie::erniepayloads]"
+    "recipe[ernie::erniepayloads]",
+    "recipe[golang]"
   ],
   "env_run_lists": {}
 }
