@@ -41,7 +41,6 @@
           "toot",
           "dropbox-uploader",
           "direnv",
-          "hammerspoon",
           "bitwarden-cli"
         ]
       }
