@@ -4,6 +4,7 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "golang": {
+      "install_dir": "/opt",
       "group": "wheel",
       "packages": [
         "launchpad.net/gorun"
