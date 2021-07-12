@@ -6,6 +6,7 @@
   "override_attributes": { },
   "chef_type": "role",
   "run_list": [
+    "recipe[chef-client::config]",
     "recipe[chef-client::default]",
     "recipe[chef_client_updater::default]"
   ],

@@ -8,6 +8,10 @@
       "go_packages": [
         "launchpad.net/gorun"
       ],
+      "gopath": {
+        "mac_os_x": "/Users/ernie/go",
+        "linux": "/home/ernie/go"
+      },
       "packages": {
         "mac_os_x": [
           "bitwarden-cli",

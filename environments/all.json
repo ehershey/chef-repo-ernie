@@ -2,7 +2,7 @@
   "name": "all",
   "description": "",
   "cookbook_versions": {
-    "ernie": "0.5",
+    "ernie": "0.7",
     "chef_client_updater": "3.12.0",
     "chef-client": "12.3.4"
   },
