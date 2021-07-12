@@ -3,15 +3,11 @@
   "description": "",
   "json_class": "Chef::Role",
   "default_attributes": {
-    "golang": {
-      "install_dir": "/opt/chef-golang",
-      "group": "wheel",
-      "packages": [
-        "launchpad.net/gorun"
-      ]
-    },
     "ernie": {
       "user": "ernie",
+      "go_packages": [
+        "launchpad.net/gorun"
+      ],
       "packages": {
         "mac_os_x": [
           "bitwarden-cli",
@@ -119,8 +115,7 @@
     "recipe[ernie::postfix]",
     "recipe[postfix::aliases]",
     "recipe[postfix::sasl_auth]",
-    "recipe[ernie::erniepayloads]",
-    "recipe[golang]"
+    "recipe[ernie::erniepayloads]"
   ],
   "env_run_lists": {}
 }
