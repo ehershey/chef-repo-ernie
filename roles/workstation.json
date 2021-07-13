@@ -6,7 +6,7 @@
     "ernie": {
       "user": "ernie",
       "go_packages": [
-        "launchpad.net/gorun"
+        "github.com/erning/gorun"
       ],
       "gopath": {
         "mac_os_x": "/Users/ernie/go",
