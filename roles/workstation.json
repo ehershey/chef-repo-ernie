@@ -16,7 +16,6 @@
         "mac_os_x": [
           "cmake",
           "python",
-          "mono",
           "nodejs",
           "wget",
           "bitwarden-cli",
