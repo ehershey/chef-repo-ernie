@@ -14,6 +14,10 @@
       },
       "packages": {
         "mac_os_x": [
+          "cmake",
+          "python",
+          "mono",
+          "nodejs",
           "wget",
           "bitwarden-cli",
           "hub",
@@ -26,7 +30,6 @@
           "jq",
           "mongodb-community@4.4",
           "html2text",
-          "cmake",
           "universal-ctags",
           "gnupg",
           "go",
