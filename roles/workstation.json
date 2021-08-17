@@ -14,6 +14,7 @@
       },
       "packages": {
         "mac_os_x": [
+          "rodionovd/taps/shortcuts",
           "cmake",
           "python",
           "nodejs",
@@ -39,7 +40,7 @@
           "pup",
           "qrencode",
           "telnet",
-          "vim",
+          "macvim",
           "watch",
           "influxdb@1",
           "util-linux",
