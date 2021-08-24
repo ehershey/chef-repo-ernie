@@ -10,6 +10,7 @@
       ],
       "gopath": {
         "mac_os_x": "/Users/ernie/go",
+        "darwin": "/Users/ernie/go",
         "linux": "/home/ernie/go"
       },
       "packages": {
