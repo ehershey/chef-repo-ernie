@@ -7,8 +7,7 @@
   "chef_type": "role",
   "run_list": [
     "recipe[chef-client::config]",
-    "recipe[chef-client::default]",
-    "recipe[chef_client_updater::default]"
+    "recipe[chef-client::default]"
   ],
   "env_run_lists": {}
 }
