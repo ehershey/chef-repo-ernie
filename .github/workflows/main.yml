@@ -35,21 +35,44 @@ jobs:
            echo +dig +short myip.opendns.com @resolver1.opendns.com;
            dig +short myip.opendns.com @resolver1.opendns.com
 
+      # knife client create github
       - name: Write Chef Key
         env:
           CHEF_KEY: ${{ secrets.CHEF_KEY }}
         run: |
-          echo writing key file
+          echo Writing key file
           echo "$CHEF_KEY" > chef.pem
 
+      # for environment in $(knife environment list); do knife acl add client github environments $environment update ; done # add to existing environments
+      # knife acl add client github containers environments update # add to future environments
       - name: Upload Environments
         run: |
           for environment_file in environments/*.json
           do
-            echo "processing $environment_file"
+            echo "Processing $environment_file"
             environment_name="$(jq -r .name < "$environment_file")"
             echo diff:
-            diff <(jq --sort-keys < "$environment_file") <(knife environment show "$environment_name" --format json --key chef.pem --user github --server https://chef.ernie.org/organizations/ernie_org | jq --sort-keys)
-            echo uploading:
-            knife environment from file "$environment_file" --key chef.pem --user github --server https://chef.ernie.org/organizations/ernie_org
+            if diff <(jq --sort-keys < "$environment_file") <(knife environment show "$environment_name" --format json --key chef.pem --user github --server https://chef.ernie.org/organizations/ernie_org | jq --sort-keys) ; then
+              echo skipping noop upload
+            else
+              echo "Uploading $environment_file"
+              knife environment from file "$environment_file" --key chef.pem --user github --server https://chef.ernie.org/organizations/ernie_org
+            fi
+          done
+
+      # for role in $(knife role list); do knife acl add client github roles $role update ; done # add to existing roles
+      # knife acl add client github containers roles update # add to future roles
+      - name: Upload Roles
+        run: |
+          for role_file in roles/*.json
+          do
+            echo "Processing $role_file"
+            role_name="$(jq -r .name < "$role_file")"
+            echo diff:
+            if diff <(jq --sort-keys < "$role_file") <(knife role show "$role_name" --format json --key chef.pem --user github --server https://chef.ernie.org/organizations/ernie_org | jq --sort-keys) ; then
+              echo skipping noop upload
+            else
+              echo "Uploading $role_file"
+              knife role from file "$role_file" --key chef.pem --user github --server https://chef.ernie.org/organizations/ernie_org
+            fi
           done
