@@ -1,0 +1,16 @@
+{
+  "id": "created-via-sync",
+  "environments": {
+    "blah": [ 1, 2, 3, "blah" ],
+    "dev-gov": {
+      "deploy_type": "fad-cnt",
+      "service_type": "http1",
+      "splunk_index": "sre",
+      "env_vars": {
+        "METRICS_LISTEN_ADDRESS": "<%= @prom_listen_address %>:<%= @prom_listen_port %>",
+        "ENDPOINT_DOMAIN": "us-gov-west-1.aws.cloud-gov-dev.10gen.cc",
+        "FAD_CD_MMS_DEV_VERSION_OBJECT": "origin/master"
+      }
+    }
+  }
+}
