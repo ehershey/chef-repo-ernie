@@ -17,7 +17,6 @@
         "mac_os_x": [
           "bash",
           "bash-completion@2",
-          "rodionovd/taps/shortcuts",
           "cmake",
           "python",
           "nodejs",
