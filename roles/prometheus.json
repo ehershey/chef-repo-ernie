@@ -1,0 +1,17 @@
+{
+  "name": "prometheus",
+  "description": "Prometheus Server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "ernie": {
+      "user": "ernie"
+    },
+    "prometheus": {}
+  },
+  "override_attributes": {},
+  "chef_type": "role",
+  "run_list": [
+    "recipe[prometheus::default]"
+  ],
+  "env_run_lists": {}
+}
