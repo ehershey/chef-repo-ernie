@@ -25,30 +25,3 @@
 [submodule "cookbooks/golang"]
 	path = cookbooks/golang
 	url = https://github.com/sous-chefs/golang
-[submodule "cookbooks/chef-prometheus"]
-	path = cookbooks/chef-prometheus
-	url = git@github.com:elijah/chef-prometheus.git
-[submodule "cookbooks/yum"]
-	path = cookbooks/yum
-	url = https://github.com/sous-chefs/yum
-[submodule "cookbooks/apt"]
-	path = cookbooks/apt
-	url = https://github.com/sous-chefs/apt
-[submodule "cookbooks/runit"]
-	path = cookbooks/runit
-	url = https://github.com/chef-cookbooks/runit
-[submodule "cookbooks/compat_resource"]
-	path = cookbooks/compat_resource
-	url = https://github.com/chef-boneyard/compat_resource
-[submodule "cookbooks/bluepill"]
-	path = cookbooks/bluepill
-	url = https://github.com/chef-boneyard/bluepill
-[submodule "cookbooks/rsyslog"]
-	path = cookbooks/rsyslog
-	url = https://github.com/sous-chefs/rsyslog
-[submodule "cookbooks/packagecloud"]
-	path = cookbooks/packagecloud
-	url = https://github.com/sous-chefs/packagecloud
-[submodule "cookbooks/yum-epel"]
-	path = cookbooks/yum-epel
-	url = https://github.com/sous-chefs/yum-epel
