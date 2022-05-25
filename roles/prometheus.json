@@ -11,7 +11,7 @@
   "override_attributes": {},
   "chef_type": "role",
   "run_list": [
-    "recipe[prometheus::default]"
+    "recipe[ernie::prometheus]"
   ],
   "env_run_lists": {}
 }
