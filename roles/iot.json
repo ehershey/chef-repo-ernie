@@ -10,7 +10,6 @@
   "override_attributes": {},
   "chef_type": "role",
   "run_list": [
-    "recipe[ernie::iot]",
     "role[chef-client]"
   ],
   "env_run_lists": {}
