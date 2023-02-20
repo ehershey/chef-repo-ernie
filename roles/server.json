@@ -8,14 +8,19 @@
     }
   },
   "override_attributes": {
-
+    "prometheus_exporters": {
+      "listen_interface": "tailscale0",
+      "node": {
+        "user": "nobody"
+      }
+    }
   },
   "chef_type": "role",
   "run_list": [
     "recipe[ernie::server]",
     "role[chef-client]",
+    "role[node-exporter]",
     "recipe[ernie::erniepayloads]"
-
   ],
   "env_run_lists": {
 
