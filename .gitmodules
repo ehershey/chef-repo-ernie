@@ -25,3 +25,6 @@
 [submodule "cookbooks/golang"]
 	path = cookbooks/golang
 	url = https://github.com/sous-chefs/golang
+[submodule "cookbooks/prometheus-exporters"]
+	path = cookbooks/prometheus-exporters
+	url = git@github.com:evilmartians/chef-prometheus-exporters.git
