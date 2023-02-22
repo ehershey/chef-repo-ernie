@@ -113,6 +113,9 @@
     }
   },
   "override_attributes": {
+    "prometheus_exporters": {
+      "listen_interface": "tailscale0"
+    },
     "postfix": {
       "packages": []
     }
@@ -122,6 +125,7 @@
     "recipe[ernie::workstation]",
     "recipe[ernie]",
     "role[chef-client]",
+    "role[node-exporter]",
     "recipe[ernie::postfix]",
     "recipe[postfix::aliases]",
     "recipe[postfix::sasl_auth]",

@@ -10,7 +10,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[prometheus_exporters::node]"
+    "recipe[ernie::node-exporter]"
   ],
   "env_run_lists": {
 
