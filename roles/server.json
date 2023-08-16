@@ -4,7 +4,12 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "ernie": {
-      "user": "ernie"
+      "user": "ernie",
+      "gopath": {
+        "mac_os_x": "/Users/ernie/go",
+        "darwin": "/Users/ernie/go",
+        "linux": "/home/ernie/go"
+      }
     }
   },
   "override_attributes": {
@@ -18,6 +23,7 @@
   "chef_type": "role",
   "run_list": [
     "recipe[ernie::server]",
+    "recipe[ernie]",
     "role[chef-client]",
     "role[node-exporter]",
     "recipe[ernie::erniepayloads]"
