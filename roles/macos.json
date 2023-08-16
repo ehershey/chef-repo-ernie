@@ -1,0 +1,14 @@
+{
+  "name": "macos",
+  "description": "",
+  "json_class": "Chef::Role",
+  "override_attributes": {
+    "prometheus_exporters": {
+      "listen_interface": "utun3"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+  ],
+  "env_run_lists": {}
+}
